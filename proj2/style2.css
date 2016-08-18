@@ -6,3 +6,10 @@
 body {
     background-color:lightgreen;
 }
+
+#hello{color:Red}
+#my{color:White}
+#yello{color:yellow}
+.container table, .container th, .container td{
+    border: 1px solid black;
+}

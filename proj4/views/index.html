@@ -7,8 +7,8 @@
  <link rel="stylesheet" href="/ui_class/proj4/node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-<form name="form" method="get"><!--get shows the value and push the information to url and post hides the value from user-->
-    <table class="table table-hover table-striped">
+    <form name="form" method="get"><!--get shows the value and push the information to url and post hides the value from user-->
+     <table class="table table-bordered table-hover table-striped">
         <tr>
             <th>Label</th>
             <th>forms elements</th>
@@ -31,8 +31,7 @@
              <td><input type="radio" name="gender" value="Male">Male<br>
                  <input type="radio" name="gender" value="FeMale">Female<br>
                  <input type="radio" name="gender" value="Others">Others</td>
-            <input type="radio" name="gender" value="Other">Other</td>
-        </tr>
+
 
         <tr>
             <td>Cars</td>
@@ -60,5 +59,62 @@
 </table>
 <input type="submit" value="submit">
     </form>
+<hr>
+
+    <form name="form1" method="get"><!--get shows the value and push the information to url and post hides the value from user-->
+        <table>
+            <tr>
+                <th>Label</th>
+                <th>forms elements</th>
+            </tr>
+
+            <tr>
+                <td>username</td>
+                <td><input type="text" name="uname" id="uname" placeholder="Enter Username" value="sample"></td>
+                <!--placeholder sets in background, value for default --->
+
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="password" name="password" id="password" placeholder="Enter password"></td>
+
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" value="Male">Male<br>
+                    <input type="radio" name="gender" value="FeMale">Female<br>
+                    <input type="radio" name="gender" value="Others">Others</td>
+
+
+            <tr>
+                <td>Cars</td>
+                <td><input type="checkbox" name="toyota" value="toyota"> Toyota<br>
+                    <input type="checkbox" name="honda" value="honda"> Honda<br>
+                    <input type="checkbox" name="bmw" value="bmw"> BMW<br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Countries</td>
+                <td>
+                    <select name="Countries">
+                        <option value=""> Select</option><!--we created a null value-->
+                        <option value="npl">Algeria</option>
+                        <option value="pak">Pakistan</option>
+                        <option value="sa">SaudiArabia</option>
+                        <option value="afg">Afganistan</option>
+                        <option value="nep">Nepal</option>
+
+                    </select>
+                </td>
+
+            </tr>
+        </table>
+        <input type="submit" value="submit">
+    </form>
+
+
+
 </body>
 </html>

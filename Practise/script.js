@@ -7,7 +7,8 @@ function calculateTip() {
     var serviceQuality = document.getElementById("serviceQuality").value();
     var numPeople = document.getElementById("totalPeople").value;
     if (billAmount === "" || serviceQuality == 0) {
-        return window.alert("please enter the number!");
+        window.alert("please enter the number!");
+        return;
     }
     if (numPeople === "" || numPeople <= 1) {
         numPeople = 1;
@@ -20,6 +21,8 @@ function calculateTip() {
 
     total = Math.round(total * 100) / 100;
     total = total.toFixed(2);
+
+
     document.getElementById("totalTip").style.display = "block";
     document.getElementById("tip").innerHTML = total;
 }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+ <link rel="stylesheet" href="/ui_class/Assignment/Assignment2/node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+
+<form name="form" method ="post">
+    <table class="table table-bordered table-hover table-striped">
+
+
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="firstName" id="fname" placeholder="Enter your First Name"></td>
+
+        </tr>
+
+        <tr>
+            <td>Last Name</td>
+            <td><input type="text" name="lastName" id="lname" placeholder="Enter your Last Name"></td>
+
+        </tr>
+
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="gender">Male<br>
+                <input type="radio" name="gender">Female<br>
+                <input type="radio" name="gender">Others</td>
+        </tr>
+
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="address" id="address"></td>
+        </tr>
+
+        <tr>
+            <td>States</td>
+            <td><select name="STATES" id="states">
+                <option value="">Select</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Okhlama</option>
+                <option value="OR">Oregan</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washinton</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="Wy">Wyoming</option>
+
+            </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Countries</td>
+            <td>
+                <select name="Countries" id="countries">
+                    <option value=""> Select</option><!--we created a null value-->
+                    <option value="npl">Algeria</option>
+                    <option value="pak">Pakistan</option>
+                    <option value="sa">SaudiArabia</option>
+                    <option value="afg">Afganistan</option>
+                    <option value="nep">Nepal</option>
+
+                </select>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>phone number</td>
+            <td><input type="text" name="phonenumber" id="phoneno"></td>
+        </tr>
+
+    <tr>
+   <td><button id="submit" onclick = "addperson(event)">Submit</button></td>
+   <td><button id="display" onclick = "traverseArray(event)">Display</button></td>
+    </tr>
+    </table>
+</form>
+<div id="a1"></div>
+
+<script type="text/javascript" src="/ui_class/Assignment/Assignment2/js/student.js"></script>
+
+</body>
+</html>

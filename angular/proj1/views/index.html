@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<link rel="stylesheet" href="/ui_class/angular/proj1/css/style.css">-->
+    <!--<link rel="stylesheet" href="/ui_class/angular/proj1/node_modules/bootstrap/dist/css/bootstrap.css">-->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body ng-app="app"><!--import angular here. it will create root scope. --->
+
+<!--<div class="flex-container">-->
+
+    <!--<span class="flex-item"> Electronics</span>-->
+    <!--<span class="flex-item">Home</span>-->
+    <!--<span class="flex-item"> Games</span>-->
+    <!--<span class="flex-item"> Cell</span>-->
+    <!--<span class="flex-item"> Stationary</span>-->
+    <!--<span class="flex-item"> Audio</span>-->
+<!--</div>-->
+    <div ng-controller="AppCtrl">
+        <div class="container">
+            <!--<app-title></app-title>. its an element. it is used to show the hellow world in ui through EAMC-->
+            <!--<div app-title> </div>&lt;!&ndash;if we delete E in title.js of EAMC then we need to add attribute so that we can see hello world in ui-&ndash;&gt;-->
+            <div class="app-title"></div><!---if we delete C then its the syntax-->
+            <!--<app-title></app-title>&lt;!&ndash;this one is also for class&ndash;&gt;-->
+
+
+        <div class="row">
+            <div class="col-md-12 bord" style="text-align: center;">Title</div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12 bord width:100%">
+               <nav-bar></nav-bar>
+
+
+                <!--<div ng-repeat="item in itemtypes">-->
+                    <!--<div class="bord">-->
+                    <!--{{::item}}-->
+                    <!--</div>-->
+                <!--</div>-->
+        </div>
+            </div>
+            <div class="col-md-8 bord">
+                {{::description.title}}<br>
+            {{::description.body}}
+
+            <br>
+        <br>
+        {{::prommsg.title}}<br>
+            <!--{{::prommsg.body}}-->
+                <!--<img src="/ui_class/angular/proj1/images/usa.jpg">-->
+        <img src="/images/usa.jpg">
+
+        </div>
+
+        </div>
+    </div>
+        </div>
+
+
+<!--<body ng-app="app">-->
+<!--<div ng-controller="AppCtrl">-->
+
+
+    <!--{{person.name}}&lt;!&ndash;two way binding.&ndash;&gt;-->
+    <!--{{::person.name}}&lt;!&ndash;one way binding.ex: footer-&ndash;&gt;-->
+<!--<input type="text" ng-model="person.name" id="name">-->
+<!--</div>-->
+
+
+<!--<script type="text/javascript" src="/ui_class/angular/proj1/node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/ui_class/angular/proj1/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="/ui_class/angular/proj1/node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="/ui_class/angular/proj1/js/proj1.js"></script><!--module declaration
+<script type="text/javascript" src="/ui_class/angular/proj1/js/controller/AppCtrl.js"></script>
+<script type="text/javascript" src="/ui_class/angular/proj1/js/directives/title.js"></script>
+<script type="text/javascript" src="/ui_class/angular/proj1/js/directives/nav-bar.js"></script>-->
+
+<!--local host-->
+<script type="text/javascript" src="/node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="/js/proj1.js"></script><!--module declaration-->
+<script type="text/javascript" src="/js/controller/AppCtrl.js"></script>
+<script type="text/javascript" src="/js/directives/title.js"></script>
+<script type="text/javascript" src="/js/directives/nav-bar.js"></script>
+<script type="text/javascript" src="/js/services/itemtypesserv.js"></script>
+</body>
+</html>

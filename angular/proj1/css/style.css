@@ -1,0 +1,25 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-item{
+    background:black;
+    color: white;
+    cursor:pointer;
+}
+
+.flex-item:hover{
+    background: white;
+    color: black;
+}
+
+/*if we hover it will change the property
+nav bar done
+*/
+.bord{
+    border: double;
+
+}
+

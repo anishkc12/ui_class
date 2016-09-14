@@ -4,42 +4,53 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-
  <link rel="stylesheet" href="/ui_class/Assignment/Assignment2/node_modules/bootstrap/dist/css/bootstrap.css">
-
+    <link rel="stylesheet" type="text/css" href="/ui_class/Assignment/Assignment2/css/style.css">
 </head>
 <body>
 
 <form name="form" method ="post">
     <table class="table table-bordered table-hover table-striped">
 
-
         <tr>
-            <td>First Name</td>
-            <td><input type="text" name="firstName" id="fname" placeholder="Enter your First Name"></td>
-
+            <td>
+            <label id="lblfirstname">First Name</label>
+            </td>
+            <td><input type="text" name="firstName" id="fname" placeholder="Enter your First Name" value="">
+            <span id="fname1"></span></td>
         </tr>
 
         <tr>
-            <td>Last Name</td>
-            <td><input type="text" name="lastName" id="lname" placeholder="Enter your Last Name"></td>
-
+            <td>
+            <label id="lblsecondname">Last Name</label>
+            </td>
+            <td><input type="text" name="lastName" id="lname" placeholder="Enter your Last Name" value="">
+            <span id="lname2"></span></td>
         </tr>
 
         <tr>
-            <td>Gender</td>
+            <td>
+            <label id="lblgender">Gender</label>
+            </td>
             <td><input type="radio" name="gender">Male<br>
                 <input type="radio" name="gender">Female<br>
-                <input type="radio" name="gender">Others</td>
+                <input type="radio" name="gender">Others
+            <span id="gender1"></span> </td>
+
         </tr>
 
         <tr>
-            <td>Address</td>
-            <td><input type="text" name="address" id="address"></td>
+            <td>
+            <label id="lbladdress">Address</label>
+            </td>
+            <td><input type="text" name="address" id="address">
+            <span id="address1"></span></td>
         </tr>
 
         <tr>
-            <td>States</td>
+            <td>
+            <label id="lblstates">States</label>
+            </td>
             <td><select name="STATES" id="states">
                 <option value="">Select</option>
                 <option value="AL">Alabama</option>
@@ -94,11 +105,14 @@
                 <option value="Wy">Wyoming</option>
 
             </select>
+                <span id="states1"></span>
             </td>
         </tr>
 
         <tr>
-            <td>Countries</td>
+            <td>
+            <label id="lblcountries">Countries</label>
+            </td>
             <td>
                 <select name="Countries" id="countries">
                     <option value=""> Select</option><!--we created a null value-->
@@ -109,13 +123,17 @@
                     <option value="nep">Nepal</option>
 
                 </select>
+                <span id="countries1"></span>
             </td>
 
         </tr>
 
         <tr>
-            <td>phone number</td>
-            <td><input type="text" name="phonenumber" id="phoneno"></td>
+            <td>
+            <label id="lblphoneno">Phone number</label>
+            </td>
+            <td><input type="text" name="phonenumber" id="phoneno">
+            <span id="phoneno1"></span></td>
         </tr>
 
     <tr>
@@ -137,6 +155,8 @@ My name is Khan
 <button id="firstbtn">display</button>
 <button id="secondbtn">display</button>
 <button id="thirdbtn">displayall</button>
+<button id="fourthbtn">Button4</button>
+<button id="fifthbtn">Button5</button>
 
 <script type="text/javascript" src="/ui_class/Assignment/Assignment2/node_modules/jquery/dist/jquery.js"></script><!--bootstrap should be below jquery-->
 <script type="text/javascript" src="/ui_class/Assignment/Assignment2/js/student.js"></script>

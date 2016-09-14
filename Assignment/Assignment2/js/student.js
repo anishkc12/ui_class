@@ -11,13 +11,107 @@ function addperson(event)
 
     var gender = "";
     var radios = document.getElementsByName('gender'); // selects gender
+    var checkeditem=false;
     for (var i = 0, length = radios.length; i < length; i++)
     {
         if (radios[i].checked) {
             gender = radios[i].value;
+            checkeditem=true;
             break;
         }
     }
+if (checkeditem==false)//validate the gender
+{
+    $('#lblgender').addClass('error');
+    $('#gender1').html('select gender');
+
+}
+else
+
+    {
+        $('#lblgender').removeClass('error');
+        $('#gender1').html('');
+
+    }
+    //this is how to read the value in the text box, basically we assign the variable to the value of an element got by id.
+    var first_name=$('#fname').val();
+    if(first_name.length==0){
+    $('#lblfirstname').addClass('error');
+    $('#fname1').html('Firstname cant be empty').addClass('error')//we just added .addclass for css style
+
+    }
+    else {
+
+    $('#lblfirstname').removeClass('error').removeClass('error');
+    $('#fname1').html('');
+
+    }
+
+
+    var last_name=$('#lname').val();
+
+    if(last_name.length==0){
+        $('#lblsecondname').addClass('error');
+        $('#lname2').html('lastname cant be empty');
+
+    }
+    else {
+
+        $('#lblsecondname').removeClass('error');
+        $('#lname2').html('');
+
+    }
+
+
+    var address=$('#address').val();
+    if(address.length==0){
+        $('#lbladdress').addClass('error');
+        $('#address1').html('address cant be empty');
+
+    }
+    else {
+
+        $('#lbladdress').removeClass('error');
+        $('#address1').html('');
+
+    }
+
+    var lblphoneno=$('#phoneno').val();
+    if(lblphoneno.length==0)
+    {
+        $('#lblphoneno').addClass('error');
+        $('#phoneno1').html('input your cell number');
+    }
+    else
+    {
+        $('#lblphoneno').remove('error');
+        $('#phoneno1').html('');
+    }
+
+    var lblcountries=$('#countries').val();
+    if(lblcountries.length==0)
+    {
+        $('#lblcountries').addClass('error');
+        $('#countries1').html('input your country');
+    }
+    else
+    {
+        $('#lblcountries').remove('error');
+        $('#countries1').html('');
+    }
+
+    var lblstates=$('#states').val();
+    if(lblstates.length==0)
+    {
+        $('#lblstates').addClass('error');
+        $('#states1').html('input your states');
+    }
+    else
+    {
+        $('#lblstates').remove('error');
+        $('#states1').html('');
+    }
+
     var person = {
         "firstName" : document.getElementById('fname').value,
         "lastName" : document.getElementById('lname').value,
@@ -32,7 +126,24 @@ function addperson(event)
     person_array.push(person);
     console.log(person_array);
 }
+//
+$(document).ready(function () {
+    $('#fname').on('blur',function () {
+        var first_name=$('#fname').val();
+        if(first_name.length==0){
+            $('#lblfirstname').addClass('error');
+            $('#fname1').html('Firstname cant be empty').addClass('error')//we just added .addclass for css style
 
+        }
+        else {
+
+            $('#lblfirstname').removeClass('error').removeClass('error');
+            $('#fname1').html('');
+
+        }
+
+    });
+});
 
 function traverseArray(event) {
     event.preventDefault();
@@ -73,7 +184,6 @@ function traverseArray(event) {
 //     });
 // });
 
-
 $(document).ready(function(){
 $('#btn1').on('click', function () {//click:single click, dblclick:double click
     alert("hello world");
@@ -93,9 +203,26 @@ $('#btn1').on('click', function () {//click:single click, dblclick:double click
         $('#firstbtn').trigger('click');
         $('#secondbtn').trigger('click');
 
-
     });
+
 });
 
+//adding class and then remove it. since css says it
+$(document).ready(function () {
+$('#fourthbtn').click(function () {
+    $('#lblfirstname').addClass('error');
+});
+});
+
+$(document).ready(function () {
+    $('#fifthbtn').click(function () {
+        $('#lblfirstname').removeClass('error');
+
+    });
+
+});
+
+//adding value
+// $('#fname').val("ram");
 
 

@@ -9,7 +9,7 @@ body{
     margin: 40px auto 0;
     padding: 50px;
     box-sizing:border-box;
-    background: url("/../images/usa.jpg") top left repeat;
+    background: url("/angular/proj1/images/usa.jpg") top left repeat;
     box-shadow:0 10px 15px -8px #000;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;

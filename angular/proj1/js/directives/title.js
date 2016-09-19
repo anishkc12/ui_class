@@ -16,20 +16,4 @@ return {
 };
 });
 
-
-
-/*
-
-
- angular.module('app').directive('AppTitle',function(){
- return{
- restrict:'EAMC';
- templateUrl: 'file path to html',
- link:function(){
-
- }
-
- };
- });
-
- */
+//directives are used DOM manupulation.

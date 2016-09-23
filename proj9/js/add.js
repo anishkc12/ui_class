@@ -166,6 +166,4 @@ obj1.setx(2);
 console.log(obj1.getx());
 
 
-
-
     */

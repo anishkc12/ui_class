@@ -1,0 +1,91 @@
+
+
+ALTER TABLE `shoppingcart`.`inventory` 
+DROP FOREIGN KEY `FK_INVENTORY_INVENTORYTYPE`;
+ALTER TABLE `shoppingcart`.`inventory` 
+CHANGE COLUMN `inventorytypeid` `inventorytype_id` INT(11) NULL DEFAULT NULL ,
+CHANGE COLUMN `price` `price` VARCHAR(45) NULL DEFAULT NULL ,
+CHANGE COLUMN `active` `prod_name` VARCHAR(45) NULL DEFAULT NULL ,
+CHANGE COLUMN `name` `img_path` VARCHAR(45) NULL DEFAULT NULL ,
+CHANGE COLUMN `imagepath` `active` VARCHAR(45) NULL DEFAULT NULL ;
+ALTER TABLE `shoppingcart`.`inventory` 
+ADD CONSTRAINT `FK_INVENTORY_INVENTORYTYPE`
+  FOREIGN KEY (`inventorytype_id`)
+  REFERENCES `shoppingcart`.`inventory_type` (`id`);
+
+
+
+  ALTER TABLE `shoppingcart`.`inventory_type` 
+CHANGE COLUMN `name` `description` VARCHAR(20) NULL DEFAULT NULL ;
+
+
+ALTER TABLE `shoppingcart`.`inventory` 
+CHANGE COLUMN `description` `description` VARCHAR(200) NULL DEFAULT NULL ;
+
+ALTER TABLE `shoppingcart`.`inventory` 
+CHANGE COLUMN `description` `description` VARCHAR(500) NULL DEFAULT NULL ;
+DELETE FROM `shoppingcart`.`inventory` WHERE `id`='1';
+
+//Appliances
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('01', 'RACHAEL RAY Cucina 2-Piece Skillet Set: Nonstick finish; oven safe up to 400 degrees; aluminum construction; enamel-porcelain exterior; dual-riveted, rubberized stainless-steel handle; 9.25" and 11" skillets','$8.99', 'RACHAEL RAY ', '/static/images/appliance/kitchen.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('01', 'Mechanical temperature controls; Accu-Chill temperature management system; SpillGuard shelves; gallon-size door bins; meat, crisper and snack pans; freezer bin','$1299.99', 'Whirlpool','/static/images/refrigerator.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('01', 'Ready-Select digital controls; holds up to 12 place settings; 55dB operation; 4 wash cycles, including rinse-only; control lock; delay-start; UltraQuiet III sound reduction package','$349.99', 'Frigidaire','/static/images/dishwasher.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('01', 'Up-front digital and knob controls; 11 cycles; very, more, normal and damp dry settings; powdercoat drum; noise reduction','$649.99', 'Samsung','/static/images/laundry.png','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('01', '700W of power; electronic controls with LED display; 11 power levels; 6 one-touch settings; time and weight defrost; 30-second express cooking; 10" removable glass turntable','$49.99', 'Insignia','/static/images/microwave.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('01', 'WINE ENTHUSIAST 8-Bottle Modular Wine Rack: Mahogany material; hand-cut, hand-sanded design; expandable; includes solid-pine dowels and pegs','$39.99', 'WINE ENTHUSIAST','/static/images/winerack.png','true');
+
+
+//Electrnoics
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('02', '1-line x 10-digit display; more than 120 built-in functions; 20 memory registers','$69.99', 'HP - Financial Calculator','/static/images/electronics/calculator.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('02', 'Wireless range up to 30 sound isolating; fine-tuned acoustics; on-ear controls; built-in microphone; RemoteTalk cable; pivoting earcups; LED battery fuel gauge; foldable design; carrying case','$179.99', 'Beats by Dr. Dre','/static/images/electronics/headphone.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('02', 'iPod touch is the perfect way to carry your music collection in your pocket. Now in 5 stunning colors. Listen to your favorite songs from Apple Music and iTunes. iPod touch offers the ultimate mobile gaming experience. All on a 4-inch Retina display.','$249.99', 'BApple - iPod','/static/images/electronics/ipod.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('02', 'Enjoy DISH entertainment in a portable setup with this DISH playmaker antenna, and surf channels with the included DISH Wally receiver. An integrated carrying handle makes it easy to move, and the 25-foot coax cable offers easy connection. This DISH playmaker antenna works with 110-, 119-, and 129-degree satellite positions for versatile viewing','$629.99', 'Winegard','/static/images/electronics/satellite.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('02', 'With electronic SteadyShot image stabilization, this Sony POV HDRAZ1VR/W camcorder enables you to capture smooth, crisp images. The ultracompact design supports on-the-go shooting sessions.','$213.99', 'Sony','/static/images/electronics/camcorder.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('02', '250 lumens output; up to 150m beam distance; 10 hours of usage; low, high and flashing modes; aluminum casing; includes 6 AA batteries','$19.99', 'Insignia™','/static/images/electronics/flashlight.jpg','true');
+
+
+//Cellphones
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('03', '5.5-inch Retina HD display,A9 chip with 64-bit desktop-class architecture, new 12MP iSight camera with Live Photos,3D Touch,iOS 9 and iCloud, 7.3mm thin, seamless design','$449', 'iphone5s','/static/images/cellphones/apple.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('03', 'Qualcomm Snapdragon 820 quad-core processor,Android Marshmallow 6.0.1 operating system, 4G LTE speed, Wi-Fi, 5.2" Quad HD Super LCD5 screen','$450', 'HTC10','/static/images/cellphones/htc.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('03', 'Qualcomm Snapdragon 810 2.0GHz octa-core processor,Android 6.0 Marshmallow operating system,4G LTE speed,5.7" touch screen,12.3MP rear- and 8MP front-facing cameras','$459.99', 'Google-Nexus','/static/images/cellphones/nexus.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('03', 'Qualcomm Snapdragon 820 processor,Google Android 6.0.1 Marshmallow, 4G LTE speed, 5.1" touch screen,Bluetooth,12MP rear- and 5MP front-facing cameras','$560.99', 'Samsung S7 4G','/static/images/cellphones/samsung.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('03', 'Android 6.0 Marshmallow,4G LTE speed,5" touch screen,Bluetooth,13MP rear- and 8MP front-facing cameras','@249.99', 'Sony XPERIA','/static/images/cellphones/sonymobile.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('03', 'Qualcomm Snapdragon MSM8909 1.1GHz quad-core processor,Android 5.1 Lollipop operating system,4G LTE speed,Wi-Fi,5" touch screen','$399.99', 'ZTE-AXON','/static/images/cellphones/zte.jpg','true');
+
+ALTER TABLE `shoppingcart`.`inventory` 
+CHANGE COLUMN `img_path` `img_path` VARCHAR(100) NULL DEFAULT NULL ;
+
+//Computers and Laptops
+
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('04', 'MacBook Pro with Retina display - 13.3" Display - 8GB Memory - 128GB Flash Storage','$1299.99', 'macbookpro','/static/images/computerandlaptops/macbookpro.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('04', 'Windows 10 Home 64-bit,NVIDIA GeForce 940MX 2GB dedicated graphics, Technical details: 6th Gen Intel® Core™ i7 processor; 17.3" display; 12GB memory; 1TB hard drive,Special features: Bluetooth; touch screen; backlit keyboard; HDMI output, Note: DVD/CD drive not included','$849.99', 'Dell - Inspiron 2-in-1','/static/images/computerandlaptops/dell.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('04', 'Windows 10,Technical details: 6th Gen Intel® Core™ i5 processor; 15.6" display; 8GB memory; 1TB hard drive,Special features: HDMI output; Touch screen','$499.99', 'HP - 15.6"','/static/images/computerandlaptops/hp.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('04', 'Blue Label™,Windows 10 Home 64-bit,Technical details: 5th Gen Intel® Core™ i5 processor; 15.6" display; 8GB memory; 750GB hard drive,Special features: Bluetooth; touch screen; backlit keyboard; HDMI output,Note: DVD/CD drive not included','$549.99', 'Toshiba - Satellite Radius','/static/images/computerandlaptops/toshiba.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('04', 'Blue Label™,Windows 10,Technical details: 6th Gen Intel® Core™ i7 processor; 17.3" display size; 12GB memory; 1TB hard drive,Special features: Bluetooth; backlit keyboard; HDMI output','$1199.99', 'Asus - 17.3"','/static/images/computerandlaptops/asus.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('04', 'Windows 10 Home,Technical details: Intel® Celeron™ processor; 15.6" display; 4GB memory; 500GB hard drive,Special features: Bluetooth; HDMI output','$249.99', 'Lenovo - 15.6"','/static/images/computerandlaptops/lenovo.jpg','true');
+
+//Game Consoles
+
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('05', 'Journey through the gaming universe with nearly limitless possibilities','$399.99', 'playstation4','/static/images/gameandconsoles/playstation.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('05', 'Surround yourself with games, movies, apps and more in a nonstop entertainment experience','$199.99', 'Microsoft - Xbox One Console','/static/images/gameandconsoles/xbox.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('05', 'Intelligent flight system; integrated camera with gimbal stabilization; 2.7K HD video; 12.0MP photos; auto and manual focus; 16GB internal memory; motion sensor; view a live video feed on your mobile device','$499.99', 'DJI Phantom 3','/static/images/gameandconsoles/drones.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('05', 'Enjoy stunning, high-quality graphics, immersive action-packed worlds and an innovative controller design that reinvents the way you interact with games. With new racing circuits, new gameplay features and a stunning new look, Mario Kart 8 certainly lives up to the legacy.','$299.99', 'Nintendo-Wii U 32GB','/static/images/gameandconsoles/wiiu.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('05', 'Counter-Strike is a series of multiplayer first-person shooter video games, in which teams of terrorists and counter-terrorists battle to, respectively, perpetrate an act of terror and prevent it.','$69.99', 'Counter Strike','/static/images/gameandconsoles/counterstrike.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('05', 'The Shield Portable is a handheld game console by Nvidia, released on July 31, 2013. Shield Portable runs on Android Lollipop 5.1, featuring a flip-up 130 mm touchscreen display with 1280x720 pixel resolution.','$199.99', 'Shield','/static/images/gameconsoles/calculator.jpg','true');
+
+
+
+//TVandhometheater
+
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('06', 'Explore a wide range of apps on your LG UHD 4K smart OLED TV. It has a user interface that lets you connect your mobile devices and enjoy watching shows from a variety of streaming services. This LG UHD 4K smart OLED TV has more than eight million pixels that deliver four times the resolution for an Ultra HD experience.','$2799.99', 'LG - 55" Class','/static/images/TVandhometheater/LG.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('06', 'Samsung UN32J5003AFXZA LED HDTV: TV shows and movies are displayed in a wide spectrum of colors and with clear, sharp 1080p resolution. Plus, the screen can be viewed in bright or dark rooms, letting you place it just about anywhere.','$699.99', 'Samsung - 60"','/static/images/TVandhometheater/samsung.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('06', 'Experience stunning colors, detailed images and blur-free fast-moving scenes with this Sharp Smart 4K TV. The 55-inch panel delivers four times the clarity of HDTVs and supports up to 2160p resolution for bright and true-to-life images and videos. Four HDMI and three USB ports let you connect game consoles and external devices to this Sharp Smart 4K TV.','$599.99', 'Sharp - 55" Class ','/static/images/TVandhometheater/sharp.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('06', 'The new Apple TV delivers an all-new experience with Touch and','$149.99', 'Apple TV - 32GB','/static/images/TVandhometheater/apple.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('06', 'Vizio LED HDTV: Enjoy your favorite programs, films and music easily with built-in Wi-Fi and access to a variety of apps, including Netflix, Hulu Plus, Amazon Instant Video and YouTube. The 120Hz refresh rate minimizes motion blurring for ideal picture clarity as you watch in 720p HD resolution.','$239.99', 'VIZIO - 39" Class','/static/images/TVandhometheater/vizio.jpg','true');
+INSERT INTO inventory(inventorytype_id,description, price, prod_name, img_path, active) values('06', 'SunBrite TV Pro Series LED Outdoor TV: With a large full HD screen and antiglare protective glass, this TV is easily viewable in direct sunlight. The powdercoat aluminum exterior and water-tight cable entry system protect against the elements.','$2499.99', 'SunBriteTV - Pro Series 55" Class','/static/images/TVandhometheater/lg.jpg','true');
+
+
+
+
+
+

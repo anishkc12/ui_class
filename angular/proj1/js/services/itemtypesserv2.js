@@ -15,8 +15,7 @@ angular.module('app').service('itemtypesserv1', function()
     };
 });
 
-
-//
+/*
 
 var itemTypesid=id;
 for(i=0;i<$scope.itemTypes,length,i++){
@@ -26,3 +25,5 @@ for(i=0;i<$scope.itemTypes,length,i++){
 $scope.title=$scope.itemTypes[i].type;
     }
 }
+
+    */

@@ -13,8 +13,20 @@ module.exports = function(config) {
     frameworks: ['jasmine'],
 
 
-    // list of files / patterns to load in the browser
+    // list of files / patterns to load in the browser//*.* any extension go inside the file
     files: [
+
+      //dependency files
+        "./node_modules/angular/angular.js", // JQuery should be in the top
+        "./node_modules/angular-mocks/angular-mocks.js",
+        "./node_modules/angular-route/angular-route.js",
+
+        //application files
+      "./js/proj1.js",
+      "./js/**/*.js",
+
+//below this are the test specs files
+      "./test/**/*.*"
     ],
 
 

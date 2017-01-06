@@ -1,0 +1,57 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd 
+http://www.springframework.org/schema/jee 
+http://www.springframework.org/schema/jee/spring-jee.xsd 
+http://www.springframework.org/schema/tx 
+http://www.springframework.org/schema/tx/spring-tx.xsd
+http://www.springframework.org/schema/data/jpa 
+http://www.springframework.org/schema/data/jpa/spring-jpa.xsd 
+http://www.springframework.org/schema/aop 
+http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/util 
+http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<bean
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>file:C:\develop\appproperties.txt</value>
+			</list>
+		</property>
+	</bean>
+
+	<import resource="SpringContext2.xml" />
+
+	<!-- <bean name="productObjConst1" class="com.cubic.spring.ProductVO" scope="prototype"> 
+		<constructor-arg value="Dell Laptop" /> <constructor-arg value="2144446666" 
+		type="java.lang.Long"/> </bean> <bean name="productObjConst2" class="com.cubic.spring.ProductVO" 
+		scope="prototype"> <constructor-arg value="Dell Laptop" /> <constructor-arg 
+		value="Lenovo" /> <constructor-arg value="1.4.5" /> </bean> <bean name="productObj" 
+		class="com.cubic.spring.ProductVO" scope="prototype"> <property name="productName" 
+		value="Dell Laptop"></property> <property name="productDesc" value="This 
+		is Dell product"></property> <property name="manufacture" value="Manufactured 
+		by Dell"></property> <property name="productId" value="1234567"></property> 
+		</bean> <bean name="myProduct" class="com.cubic.spring.ProductVO" scope="prototype"> 
+		<property name="productName" value="HP Laptop"></property> <property name="productDesc" 
+		value="This is HP product"></property> <property name="manufacture" value="Manufactured 
+		by HP"></property> <property name="productId" value="00000000"></property> 
+		</bean> <bean name="absService" class="com.cubic.product.AbstractService" 
+		abstract="true"> <property name="defaultManuf" value="Walmart"></property> 
+		<property name="defaultVersion" value="2.0"></property> <property name="notifyService" 
+		ref="emailNotify"></property> </bean> <bean name="productsServiceWalmart" 
+		class="com.cubic.product.ProductServiceimple" parent="absService" scope="prototype"> 
+		</bean> <bean name="productsServiceTarget" class="com.cubic.product.ProductServiceimple2" 
+		parent="productsServiceWalmart" scope="prototype" init-method="initTarget"> 
+		<property name="defaultManuf" value="Target"></property> <property name="notifyService" 
+		ref="smsNotify"></property> </bean> -->
+	<!-- <bean name="emailNotify" class="com.cubic.notify.EmailNotification" 
+		scope="prototype"/> <bean name="smsNotify" class="com.cubic.notify.SMSlNotification" 
+		scope="prototype"/> -->
+</beans>

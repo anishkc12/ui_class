@@ -2,7 +2,7 @@
  * Created by akc on 9/29/16.
  */
 
-describe("testDrectivetest cases", function () {
+describe("testDirectivetest cases", function () {
 
     beforeEach(angular.mock.module('duces'));//
     beforeEach(angular.mock.module('test'));//
@@ -12,9 +12,6 @@ describe("testDrectivetest cases", function () {
 
 
     beforeEach(inject(function($rootScope, $compile){
-
-
-
         element =angular.element('<test-directive></test-directive>');//angular.element--> minified jquery stuffs
         scope = $rootScope.$new();
         $compile(element)(scope);//$compile: angular command. //element means from directive coming on the top and add these stuffs on scope
@@ -24,7 +21,6 @@ describe("testDrectivetest cases", function () {
         scope.secondNum = 3;
         scope.submit();
         console.log(element.find('button').html());
-
     }));
 
     // it('asdf',function () {

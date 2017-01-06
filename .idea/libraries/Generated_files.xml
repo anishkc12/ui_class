@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/index-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/4-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/web/index-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/pre-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/2-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/web/immediate-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/0-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/1-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/3-compiled.js" />
+        <item url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/web/timers-compiled.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/index-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/4-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/web/index-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/pre-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/2-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/web/immediate-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/0-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/1-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/stage/3-compiled.js" />
+      <root url="file://$PROJECT_DIR$/reactjs/node_modules/babel-preset-es2015/node_modules/babel-plugin-transform-regenerator/node_modules/babel-runtime/node_modules/core-js/web/timers-compiled.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

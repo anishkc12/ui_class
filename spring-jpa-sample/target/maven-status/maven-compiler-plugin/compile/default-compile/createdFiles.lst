@@ -1,0 +1,10 @@
+com\cubic\repo\CustomerRepository.class
+com\cubic\vo\CustomerData.class
+com\cubic\test\SpringJPATest3.class
+com\cubic\test\SpringJPATest4.class
+com\cubic\mapper\CustomerMapper.class
+com\cubic\test\SpringJPATest.class
+com\cubic\test\SpringJPATest2.class
+com\cubic\entity\CustomerEntity.class
+com\cubic\service\CustomerServiceImpl.class
+com\cubic\service\CustomerService.class
